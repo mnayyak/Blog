@@ -1,0 +1,16 @@
+<div class="container" ng-controller="MainController as login">
+		<div class="col-sm-6 col-md-4 col-md-offset-4">
+		<form class="sigin" method="post" ng-submit="login.doLogin()">
+
+			Usernmae: <input type="text" class="form-control" name="usernmae" ng-model="login.loginData.username">
+				
+			Password: <input type="password" class="form-control" name="password" ng-model="login.loginData.password">
+
+			<button type="submit" class="btn btn-success">Login</button>
+		</form>
+		<div class="panel panel-danger" ng-if="login.badPassword">
+			<div class="panel panel-body" style="color:red;font-size:20px;">{{ login.error }}</div>
+		</div>	
+	</div>
+
+</div>
