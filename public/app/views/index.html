@@ -44,8 +44,8 @@
 						<li ng-if="!main.loggedIn"><a href="/signup">Signup</a></li>
 						<li ng-if="main.loggedIn"><a href="#"> Hello {{ main.user.username }}</a></li>
 						<li ng-if="main.loggedIn"><a href="#" ng-click="main.doLogout()"> Logout </a> </li>
-						<li ng-controller="StoryController"><a href="/allStories"> AllStories</li>
 					</ul>
+						<a href="/allStories"> <span style="font-size:30px;color:green;">AllStories </span></a>
 				</div>
 			</div>
 			
